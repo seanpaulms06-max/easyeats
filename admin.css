@@ -1,0 +1,263 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#f2f2f2;
+  padding:20px;
+}
+
+
+/* MAIN CONTAINER */
+
+.admin-container{
+  max-width:430px;
+  margin:auto;
+}
+
+
+/* TOP BAR */
+
+.top-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:20px;
+}
+
+.top-bar h1{
+  font-size:38px;
+  color:#222;
+}
+
+
+/* LOGOUT BUTTON */
+
+.top-bar button{
+  border:none;
+  padding:10px 18px;
+
+  border-radius:12px;
+
+  background:#ff4d4d;
+  color:white;
+
+  font-size:14px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.top-bar button:hover{
+  transform:scale(1.03);
+
+  box-shadow:
+    0 0 5px #ff4d4d,
+    0 0 10px #ff4d4d;
+}
+
+
+/* STATS */
+
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+
+  margin-bottom:25px;
+}
+
+.card{
+  background:white;
+
+  padding:20px;
+
+  border-radius:20px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+  font-size:18px;
+  margin-bottom:10px;
+  color:#666;
+}
+
+.card p{
+  font-size:30px;
+  font-weight:bold;
+  color:#40F91A;
+}
+
+
+/* ORDERS TITLE */
+
+.orders-title{
+  margin-bottom:20px;
+  color:#222;
+}
+
+
+/* ORDER CARD */
+
+.order-card{
+  background:white;
+
+  padding:20px;
+
+  border-radius:20px;
+
+  margin-bottom:20px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* TOP SECTION */
+
+.order-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:15px;
+}
+
+.order-top h3{
+  font-size:24px;
+  color:#222;
+}
+
+.order-top p{
+  color:#777;
+  margin-top:5px;
+}
+
+
+/* STATUS */
+
+.current-status{
+  padding:10px 16px;
+
+  border-radius:30px;
+
+  color:white;
+
+  font-size:14px;
+  font-weight:bold;
+}
+
+
+/* STATUS COLORS */
+
+.preparing{
+  background:orange;
+}
+
+.ready{
+  background:#40F91A;
+}
+
+.out-stock{
+  background:red;
+}
+
+
+/* ORDER INFO */
+
+.order-info{
+  margin-top:10px;
+}
+
+.order-info p{
+  margin:8px 0;
+  color:#444;
+}
+
+
+/* BUTTON AREA */
+
+.order-buttons{
+  display:flex;
+  gap:10px;
+
+  margin-top:18px;
+}
+
+
+/* BUTTONS */
+
+.order-buttons button{
+  flex:1;
+
+  border:none;
+  padding:12px;
+
+  border-radius:12px;
+
+  color:white;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+
+/* PREPARING BUTTON */
+
+.prep-btn{
+  background:orange;
+}
+
+.prep-btn:hover{
+  transform:scale(1.03);
+}
+
+
+/* READY BUTTON */
+
+.ready-btn{
+  background:#40F91A;
+}
+
+.ready-btn:hover{
+  transform:scale(1.03);
+}
+
+
+/* OUT BUTTON */
+
+.out-btn{
+  background:red;
+}
+
+.out-btn:hover{
+  transform:scale(1.03);
+}
+.received-btn{
+  background:#0b3d0b;
+  color:white;
+
+  border:none;
+  border-radius:15px;
+
+  padding:14px 18px;
+
+  font-size:18px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.received-btn:hover{
+  background:#145214;
+}

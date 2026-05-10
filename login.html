@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   
+<div class="container">
+  
+  <form id="form" class="active">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="password">Password</label>
+    <div class="password-box">
+      <input type="password" id="password" required>
+      <span onclick="togglePassword('password')" class="eye">👁</span>
+    </div>
+
+    <div id="confirmBox" style="display:none;">
+      <label for="confirmPassword">Confirm Password</label>
+      <div class="password-box">
+        <input type="password" id="confirmPassword">
+        <span onclick="togglePassword('confirmPassword')" class="eye">👁</span>
+      </div>
+    </div>
+
+    <button type="submit" id="submitBtn">Sign In</button>
+
+    <a href="#" id="forgot">Forgot password?</a>
+  </form>
+
+  
+  <div class="tabs">
+    <button type="button" id="loginTab" class="active" onclick="switchMode('login')">
+      Log In
+    </button>
+
+    <button type="button" id="registerTab" onclick="switchMode('register')">
+      Create Account
+    </button>
+  </div>
+  
+</div>
+
+<script src="main.js"></script>
+    
+</body>
+</html>

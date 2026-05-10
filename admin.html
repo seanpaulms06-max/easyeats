@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+
+    <h1>Admin Dashboard</h1>
+
+    <button onclick="logoutAdmin()">
+      Logout
+    </button>
+
+  </div>
+
+
+  <!-- STATS -->
+  <div class="stats">
+
+    <div class="card">
+
+      <h2>Total Orders</h2>
+
+      <p id="totalOrders">0</p>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Total Sales</h2>
+
+      <p id="totalSales">₱0</p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ORDER SECTION -->
+  <h2 class="orders-title">
+
+    All Orders
+
+  </h2>
+
+  <div id="ordersContainer"></div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
